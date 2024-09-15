@@ -1,0 +1,616 @@
+/* General Styles */
+
+/* Body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    max-width: 400px; /* Maximum width for the form */
+    width: 100%;
+    padding: 20px;
+    background: #fff; /* White background for the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-form label {
+    font-size: 16px;
+    color: #333; /* Dark text color */
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.login-form button {
+    padding: 10px;
+    font-size: 18px;
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap blue color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.login-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between; /* Space between Remember Me and Forgot Password */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Forgot Password */
+.forgot-password {
+    font-size: 14px; /* Smaller font size */
+    color: #555; /* Neutral grey text color */
+    cursor: pointer;
+    transition: color 0.3s;
+    text-decoration: none; /* Removes default underline */
+}
+
+.forgot-password:hover {
+    color: #333; /* Darker grey on hover */
+    text-decoration: underline;
+}
+
+/* Create New Account */
+.create-account {
+    margin-top: -25px;
+    font-size: 14px;
+    color: #555;
+    text-align: center; /* Center the text */
+}
+
+.create-account a {
+    color: #007bff; /* Link color (Bootstrap blue) */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.create-account a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Social Media Login */
+.social-login {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .social-login p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .social-icons i:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Colors for each social media icon */
+  .fab.fa-google {
+    color: #db4437;
+  }
+  
+  .fab.fa-facebook {
+    color: #3b5998;
+  }
+  
+  .fab.fa-twitter {
+    color: #1da1f2;
+  }
+  
+  .fab.fa-instagram {
+    color: #e1306c;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HomePage styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 20px;
+}
+
+.home-container h1 {
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+}
+
+.home-button {
+    display: block;
+    padding: 15px 25px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Bootstrap blue color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button */
+}
+
+/* AboutPage styles */
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+.about-page h1 {
+    font-size: 28px;
+    color: #333; /* Dark text color */
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    font-size: 18px;
+    color: #555; /* Lighter grey for text */
+    max-width: 800px; /* Limit the width of the paragraph */
+    line-height: 1.6; /* Improved readability */
+    text-align: center; /* Center the text */
+}
+
+/* FaqPage styles */
+.faq-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light grey background */
+}
+
+.faq-page h1 {
+    font-size: 28px;
+    color: #333; /* Dark text color */
+    margin-bottom: -10px;
+}
+
+.faq-list {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px; /* Space for add FAQ section */
+}
+
+.faq-list div {
+    background: #fff; /* White background for FAQ blocks */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between FAQ blocks */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.faq-list h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-list p {
+    font-size: 16px;
+    color: #555;
+}
+
+.faq-list button {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dc3545; /* Red delete button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.faq-list button:hover {
+    background-color: #c82333;
+}
+
+.add-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-faq input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add-faq button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-faq button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+
+/* TranslatorPage styles */
+.translator-page {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.translator-page h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.translator-page input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.translator-page select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.translator-page button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.translator-page button:hover {
+    background-color: #2980b9;
+}
+
+.translator-page h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.translator-page p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+
+
+/* 
+.chatbot-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+} */
+
+
+
+
+
+
+
+
+
+.chatbot-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 20px; /* Rounded corners */
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margin to separate from edges */
+    margin-top: 0px;
+}
+
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap to fit more content */
+}
+
+.message {
+    max-width: 80%;
+    padding: 12px;
+    border-radius: 12px;
+    word-wrap: break-word;
+    font-size: 16px;
+    line-height: 1.2;
+    position: relative; /* For positioning icons if needed */
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 12px 12px 0 12px; /* Rounded corners on user messages */
+}
+
+.message.bot {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: #333;
+    border-radius: 12px 12px 12px 0; /* Rounded corners on bot messages */
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px; /* Rounded corners at the bottom */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Margin to separate from the chat window */
+    margin-top: 0px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
